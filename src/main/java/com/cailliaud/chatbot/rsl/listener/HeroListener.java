@@ -13,17 +13,18 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.springframework.stereotype.Service;
 
 import java.awt.*;
-import java.util.Optional;
+import java.util.Set;
+
 
 @Service
 @Slf4j
 public class HeroListener extends ListenerAdapter {
 
-    private HeroService heroMapper;
+    private HeroService heroService;
 
-    public HeroListener(HeroService heroMapper) {
+    public HeroListener(HeroService heroService) {
         super();
-        this.heroMapper = heroMapper;
+        this.heroService = heroService;
     }
 
     @Override
@@ -34,59 +35,85 @@ public class HeroListener extends ListenerAdapter {
         MessageChannel channel = event.getChannel();
         String content = message.getContentRaw();
         Guild guild = message.getGuild();
-
-
         if (message.getContentRaw().startsWith("!raid")) {
-            Optional<String> optionalHeroName = extractHeroName(message.getContentRaw());
-            if (optionalHeroName.isPresent()) {
-
-                String heroName = optionalHeroName.get();
-
-                Hero hero = new Hero(heroName);
-
-                MessageEmbed msgEmbedded;
-                if (message.getContentRaw().startsWith("!raid-maitrise")) {
-                    msgEmbedded = new EmbedBuilder()
-                            .setColor(Color.RED)
-                            .setAuthor("Ayumilove", hero.getGuideUrl(), hero.getIconUrl())
-                            .setTitle(hero.getName(), hero.getGuideUrl())
-                            .setDescription(hero.getName() + " | Raid Shadow Legends Guide Maîtrise")
-                            .setImage(hero.getMasteryUrl())
-                            .setFooter("Information récupérer par votre humble serviteur.")
-                            .build();
-                } else {
-                    msgEmbedded = new EmbedBuilder()
-                            .setColor(Color.RED)
-                            .setAuthor("Ayumilove", hero.getGuideUrl(), hero.getIconUrl())
-                            .setTitle(hero.getName(), hero.getGuideUrl())
-                            .setDescription(hero.getName() + " | Raid Shadow Legends Guide Maîtrise")
-                            .setImage(hero.getImageUrl())
-                            .setFooter("Information récupérer par votre humble serviteur.")
-                            .build();
-                }
-
-
-                channel.sendMessage(msgEmbedded).queue();
-
-
+            String[] commands = message.getContentRaw().split(" ", 2);
+            if (commands.length == 1) {
+                manageRaidRequest(event, commands[0]);
+            } else if (commands.length >= 2) {
+                manageRaidRequest(event, commands[0], commands[1]);
             } else {
-                channel.sendMessage(event.getAuthor().getAsMention() + "\n"
-                        + "> " + event.getMessage().getContentRaw() + "\n"
-                        + "Je ne connais pas le héros demandé, je suis encore en formation !").queue();
+                sendDefaultMessage(event);
             }
         }
-
     }
 
-    private Optional<String> extractHeroName(String contentRaw) {
-
-        String[] commands = contentRaw.split(" ", 2);
-        if (commands.length < 2) {
-            return Optional.empty();
-        } else {
-            String heroData = heroMapper.findHero(commands[1].replace(" ", ""));
-            return Optional.ofNullable(heroData);
+    private void manageRaidRequest(MessageReceivedEvent event, String command) {
+        MessageChannel channel = event.getChannel();
+        switch (command) {
+            case "!raid-pex":
+                MessageEmbed msgEmbedded = new EmbedBuilder()
+                        .setColor(Color.BLUE)
+                        .setAuthor("Ayumilove", "https://ayumilove.net/raid-shadow-legends-campaign-xp-silver-guide/")
+                        .setTitle("Raid Shadow Legends : Expérience et Argent en Campagne", "https://ayumilove.net/raid-shadow-legends-campaign-xp-silver-guide/")
+                        .setDescription("Tableau listant l'ensemble des taux d'expérience et d'argent récupérables par zone de la campagne.")
+                        .setFooter("Information récupérer par votre humble serviteur.")
+                        .build();
+                channel.sendMessage(msgEmbedded).queue();
+                break;
+            default:
+                sendDefaultMessage(event);
         }
+    }
 
+    private void manageRaidRequest(MessageReceivedEvent event, String command, String argument) {
+        MessageChannel channel = event.getChannel();
+
+        String heroNameFound = heroService.findHero(argument);
+
+        if (heroNameFound == null) {
+            Set<String> possibleHeroes = heroService.findSimilarHeroes(argument);
+            String values = String.join(",", possibleHeroes);
+            channel.sendMessage(event.getAuthor().getAsMention() + "\n"
+                    + "> " + event.getMessage().getContentRaw() + "\n"
+                    + "Je ne connais pas le héros que tu me demandes. Peut-être est-ce l'un de ceci : " + values).queue();
+            return;
+        }
+        Hero hero = new Hero(heroNameFound);
+        MessageEmbed msgEmbedded;
+
+        switch (command.toLowerCase()) {
+            case "!raid-maitrise":
+                msgEmbedded = new EmbedBuilder()
+                        .setColor(Color.RED)
+                        .setAuthor("Ayumilove", hero.getGuideUrl(), hero.getIconUrl())
+                        .setTitle(hero.getName(), hero.getGuideUrl())
+                        .setDescription(hero.getName() + " | Raid Shadow Legends Guide Maîtrise")
+                        .setImage(hero.getMasteryUrl())
+                        .setFooter("Information récupérer par votre humble serviteur.")
+                        .build();
+                channel.sendMessage(msgEmbedded).queue();
+                break;
+            case "!raid":
+                msgEmbedded = new EmbedBuilder()
+                        .setColor(Color.RED)
+                        .setAuthor("Ayumilove", hero.getGuideUrl(), hero.getIconUrl())
+                        .setTitle(hero.getName(), hero.getGuideUrl())
+                        .setDescription(hero.getName() + " | Raid Shadow Legends Guide Maîtrise")
+                        .setImage(hero.getImageUrl())
+                        .setFooter("Information récupérer par votre humble serviteur.")
+                        .build();
+                channel.sendMessage(msgEmbedded).queue();
+                break;
+            default:
+                sendDefaultMessage(event);
+
+        }
+    }
+
+    private void sendDefaultMessage(MessageReceivedEvent event) {
+        MessageChannel channel = event.getChannel();
+        channel.sendMessage(event.getAuthor().getAsMention() + "\n"
+                + "> " + event.getMessage().getContentRaw() + "\n"
+                + "Tu n'as pas bien formulé la requête, utilise !raid-help pour obtenir les commandes").queue();
     }
 }

@@ -1,19 +1,21 @@
+discord:
+  token: ${DISCORD_TOKEN}
 rsl:
   heroes:
-    arbiter: arbiter
+    arbitre: arbiter
     bad-el-kazar: bad-el-kazar
-    big un: big un
-    dracomorph: dracomorph
-    duchess lilitu: duchess lilitu
-    krisk the ageless: krisk the ageless
-    martyr: martyr
+    big'un: big un
+    dracomorphe: dracomorph
+    duchesse lilitu: duchess lilitu
+    krisk l'éternel: krisk the ageless
+    martyre: martyr
     nethril: nethril
     raglin: raglin
     rhazin scarhide: rhazin scarhide
-    siphi the lost bride: siphi the lost bride
+    siphi mariée égarée: siphi the lost bride
     turvold: turvold
     valkyrie: valkyrie
-    venus: venus
+    vénus: venus
     warlord: warlord
     zavia: zavia
     abbess: abbess
@@ -24,10 +26,10 @@ rsl:
     blind seer: blind seer
     bloodgorged: bloodgorged
     brakus the shifter: brakus the shifter
-    cillian the lucky: cillian the lucky
+    cillian le chanceux: cillian the lucky
     cruetraxa: cruetraxa
     cupidus: cupidus
-    drexthar bloodtwin: drexthar bloodtwin
+    drexthar doublesang: drexthar bloodtwin
     foli: foli
     fu-shan: fu-shan
     ghostborn: ghostborn
@@ -35,7 +37,7 @@ rsl:
     khoronar: khoronar
     longbeard: longbeard
     lyssandra: lyssandra
-    ma�shalled: ma�shalled
+    ma'shalled: ma shalled
     maulie tankard: maulie tankard
     minaya: minaya
     prince kymar: prince kymar
