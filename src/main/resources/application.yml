@@ -1,0 +1,465 @@
+rsl:
+  heroes:
+    arbiter: arbiter
+    bad-el-kazar: bad-el-kazar
+    big un: big un
+    dracomorph: dracomorph
+    duchess lilitu: duchess lilitu
+    krisk the ageless: krisk the ageless
+    martyr: martyr
+    nethril: nethril
+    raglin: raglin
+    rhazin scarhide: rhazin scarhide
+    siphi the lost bride: siphi the lost bride
+    turvold: turvold
+    valkyrie: valkyrie
+    venus: venus
+    warlord: warlord
+    zavia: zavia
+    abbess: abbess
+    altan: altan
+    angar: angar
+    baron: baron
+    belanor: belanor
+    blind seer: blind seer
+    bloodgorged: bloodgorged
+    brakus the shifter: brakus the shifter
+    cillian the lucky: cillian the lucky
+    cruetraxa: cruetraxa
+    cupidus: cupidus
+    drexthar bloodtwin: drexthar bloodtwin
+    foli: foli
+    fu-shan: fu-shan
+    ghostborn: ghostborn
+    inithwe bloodtwin: inithwe bloodtwin
+    khoronar: khoronar
+    longbeard: longbeard
+    lyssandra: lyssandra
+    ma�shalled: ma�shalled
+    maulie tankard: maulie tankard
+    minaya: minaya
+    prince kymar: prince kymar
+    rae: rae
+    robar: robar
+    roshcard the tower: roshcard the tower
+    rotos the lost groom: rotos the lost groom
+    royal huntsman: royal huntsman
+    scyl of the drakes: scyl of the drakes
+    septimus: septimus
+    sethallia: sethallia
+    shamrock: shamrock
+    sir nicholas: sir nicholas
+    skartorsis: skartorsis
+    soulless: soulless
+    suzerain katonn: suzerain katonn
+    tormin the cold: tormin the cold
+    tyrant ixlimor: tyrant ixlimor
+    war mother: war mother
+    astralith: astralith
+    basileus roanas: basileus roanas
+    black knight: black knight
+    crypt-king graal: crypt-king graal
+    elder skarg: elder skarg
+    elenaril: elenaril
+    errol: errol
+    grohak the bloodied: grohak the bloodied
+    gurgoh the augur: gurgoh the augur
+    hakkorhn smashlord: hakkorhn smashlord
+    harvest jack: harvest jack
+    hegemon: hegemon
+    ignatius: ignatius
+    ithos: ithos
+    lanakis the chosen: lanakis the chosen
+    lord champfort: lord champfort
+    lord shazar: lord shazar
+    lugan the steadfast: lugan the steadfast
+    norog: norog
+    queen eva: queen eva
+    richtoff the bold: richtoff the bold
+    shirimani: shirimani
+    teela goremane: teela goremane
+    tomb lord: tomb lord
+    trunda giltmallet: trunda giltmallet
+    vizier ovelis: vizier ovelis
+    warchief: warchief
+    wurlim frostking: wurlim frostking
+    yannica: yannica
+    bystophus: bystophus
+    candraphon: candraphon
+    mortu-macaab: mortu-macaab
+    mountain king: mountain king
+    skull lord var-gall: skull lord var-gall
+    s rank: s rank
+    madame serris: madame serris
+    miscreated monster: miscreated monster
+    peydma: peydma
+    sinesha: sinesha
+    stag knight: stag knight
+    tayrel: tayrel
+    a rank: a rank
+    alure: alure
+    aothar: aothar
+    basher: basher
+    battlesage: battlesage
+    cagebreaker: cagebreaker
+    dark elhain: dark elhain
+    doompriest: doompriest
+    exemplar: exemplar
+    golden reaper: golden reaper
+    gorgorab: gorgorab
+    high khatun: high khatun
+    infernal baroness: infernal baroness
+    juliana: juliana
+    lightsworn: lightsworn
+    lua: lua
+    luria: luria
+    maneater: maneater
+    mausoleum mage: mausoleum mage
+    nazana: nazana
+    oathbound: oathbound
+    rearguard sergeant: rearguard sergeant
+    reinbeast: reinbeast
+    romero: romero
+    royal guard: royal guard
+    seeker: seeker
+    sepulcher sentinel: sepulcher sentinel
+    skullcrown: skullcrown
+    skullcrusher: skullcrusher
+    steelskull: steelskull
+    thenasil: thenasil
+    umbral enchantress: umbral enchantress
+    vergis: vergis
+    vrask: vrask
+    warden: warden
+    zargala: zargala
+    zelotah: zelotah
+    b rank: b rank
+    atur: atur
+    baerdal fellhammer: baerdal fellhammer
+    bloodfeather: bloodfeather
+    captain temila: captain temila
+    cardinal: cardinal
+    crimson helm: crimson helm
+    crypt witch: crypt witch
+    dark athel: dark athel
+    defiled sinner: defiled sinner
+    delver: delver
+    erinyes: erinyes
+    excruciator: excruciator
+    fang cleric: fang cleric
+    fenax: fenax
+    galkut: galkut
+    grimskin: grimskin
+    grizzled jarl: grizzled jarl
+    hellgazer: hellgazer
+    hordin: hordin
+    husk: husk
+    jarang: jarang
+    jareg: jareg
+    jinglehunter: jinglehunter
+    jizoh: jizoh
+    kallia: kallia
+    karam: karam
+    lady etessa: lady etessa
+    lich: lich
+    luthiea: luthiea
+    marksman: marksman
+    mistress of hymns: mistress of hymns
+    necrohunter: necrohunter
+    psylar: psylar
+    relickeeper: relickeeper
+    rock breaker: rock breaker
+    rowan: rowan
+    sandlashed survivor: sandlashed survivor
+    seer: seer
+    seneschal: seneschal
+    shatterbones: shatterbones
+    sikara: sikara
+    skytouched shaman: skytouched shaman
+    souldrinker: souldrinker
+    spider: spider
+    teshada: teshada
+    towering titan: towering titan
+    ultimate galek: ultimate galek
+    ursine ironhide: ursine ironhide
+    warcaster: warcaster
+    whisper: whisper
+    c rank: c rank
+    adriel: adriel
+    aina: aina
+    alika: alika
+    basilisk: basilisk
+    bonekeeper: bonekeeper
+    broadmaw: broadmaw
+    canoness: canoness
+    catacomb councilor: catacomb councilor
+    corpse collector: corpse collector
+    deathless: deathless
+    faceless: faceless
+    flesh-tearer: flesh-tearer
+    frostbringer: frostbringer
+    gala longbraids: gala longbraids
+    hexia: hexia
+    hope: hope
+    knight-errant: knight-errant
+    kytis: kytis
+    lordly legionary: lordly legionary
+    occult brawler: occult brawler
+    pitiless one: pitiless one
+    shaman: shaman
+    snorting thug: snorting thug
+    tallia: tallia
+    torturehelm: torturehelm
+    ursine icecrusher: ursine icecrusher
+    valla: valla
+    yaga the insatiable: yaga the insatiable
+    f rank: f rank
+    azure: azure
+    bushi: bushi
+    drake: drake
+    jotun: jotun
+    maeve: maeve
+    missionary: missionary
+    ripper: ripper
+    suwai firstborn: suwai firstborn
+    taurus: taurus
+    terrorbeast: terrorbeast
+    woad-painted: woad-painted
+    apothecary: apothecary
+    athel: athel
+    coldheart: coldheart
+    bellower: bellower
+    diabolist: diabolist
+    doomscreech: doomscreech
+    elhain: elhain
+    fellhound: fellhound
+    grappler: grappler
+    kael: kael
+    pain keeper: pain keeper
+    reliquary tender: reliquary tender
+    seducer: seducer
+    spirithost: spirithost
+    warmaiden: warmaiden
+    bogwalker: bogwalker
+    bone knight: bone knight
+    chevalier: chevalier
+    coffin smasher: coffin smasher
+    conquerer: conquerer
+    executioner: executioner
+    fleshmonger: fleshmonger
+    furystoker: furystoker
+    galek: galek
+    gator: gator
+    graybeard: graybeard
+    guardian: guardian
+    haruspex: haruspex
+    heiress: heiress
+    hexweaver: hexweaver
+    marked: marked
+    marquis: marquis
+    metalshaper: metalshaper
+    mother superior: mother superior
+    penitent: penitent
+    runic warder: runic warder
+    skirmisher: skirmisher
+    soulbond bowyer: soulbond bowyer
+    templar: templar
+    theurgist: theurgist
+    veteran: veteran
+    warpriest: warpriest
+    adjudicator: adjudicator
+    amarantine skeleton: amarantine skeleton
+    anointed: anointed
+    arcanist: arcanist
+    avenger: avenger
+    banshee: banshee
+    berserker: berserker
+    bloodbraid: bloodbraid
+    bloodpainter: bloodpainter
+    bulwark: bulwark
+    channeler: channeler
+    chaplain: chaplain
+    chopper: chopper
+    confessor: confessor
+    corpulent cadaver: corpulent cadaver
+    courtier: courtier
+    crimson slayer: crimson slayer
+    cudgeler: cudgeler
+    daywalker: daywalker
+    deathchanter: deathchanter
+    elder: elder
+    eviscerator: eviscerator
+    fencer: fencer
+    frozen banshee: frozen banshee
+    gladiator: gladiator
+    gnarlhorn: gnarlhorn
+    gravechill killer: gravechill killer
+    grinner: grinner
+    grumbler: grumbler
+    halberdier: halberdier
+    harvester: harvester
+    hill nomad: hill nomad
+    hollow: hollow
+    hurler: hurler
+    hyria: hyria
+    ifrit: ifrit
+    ironclad: ironclad
+    judge: judge
+    lamellar: lamellar
+    magus: magus
+    master butcher: master butcher
+    myrmidon: myrmidon
+    mystic hand: mystic hand
+    ogryn jailer: ogryn jailer
+    pounder: pounder
+    preserver: preserver
+    raider: raider
+    renegade: renegade
+    retainer: retainer
+    rocktooth: rocktooth
+    rotting mage: rotting mage
+    sentinel: sentinel
+    skink: skink
+    skullsworn: skullsworn
+    slitherbrute: slitherbrute
+    sorceress: sorceress
+    stout axeman: stout axeman
+    temptress: temptress
+    valerie: valerie
+    vanguard: vanguard
+    wretch: wretch
+    acolyte: acolyte
+    arbalester: arbalester
+    beast wrestler: beast wrestler
+    bloodhorn: bloodhorn
+    bombardier: bombardier
+    cataphract: cataphract
+    centurion: centurion
+    crossbowman: crossbowman
+    flesheater: flesheater
+    flinger: flinger
+    fortress goon: fortress goon
+    ghoulish ranger: ghoulish ranger
+    goremask: goremask
+    grandmaster: grandmaster
+    harrier: harrier
+    hatchet slinger: hatchet slinger
+    hellfang: hellfang
+    honor guard: honor guard
+    hospitaller: hospitaller
+    hound spawn: hound spawn
+    huntress: huntress
+    interceptor: interceptor
+    judicator: judicator
+    justiciar: justiciar
+    madman: madman
+    magister: magister
+    magmablood: magmablood
+    maiden: maiden
+    malbranche: malbranche
+    marquess: marquess
+    muckstalker: muckstalker
+    ox: ox
+    painsmith: painsmith
+    paragon: paragon
+    perforator: perforator
+    ragemonger: ragemonger
+    siegebreaker: siegebreaker
+    slasher: slasher
+    slayer: slayer
+    spikehead: spikehead
+    steadfast marshal: steadfast marshal
+    steel bowyer: steel bowyer
+    stitched beast: stitched beast
+    stoneskin: stoneskin
+    tormentor: tormentor
+    totem: totem
+    treefeller: treefeller
+    twinclaw disciple: twinclaw disciple
+    wanderer: wanderer
+    witness: witness
+    armiger: armiger
+    dhampir: dhampir
+    outlaw monk: outlaw monk
+    saurus: saurus
+    shieldguard: shieldguard
+    skinner: skinner
+    zephyr sniper: zephyr sniper
+    archer: archer
+    crusader: crusader
+    dervish: dervish
+    elfguard: elfguard
+    fireblade: fireblade
+    ritualist: ritualist
+    sergeant: sergeant
+    skullsquire: skullsquire
+    sniper: sniper
+    spiritwalker: spiritwalker
+    vigilante: vigilante
+    aristocrat: aristocrat
+    commander: commander
+    duelist: duelist
+    herald: herald
+    hungerer: hungerer
+    militia: militia
+    outlander: outlander
+    outrider: outrider
+    pilgrim: pilgrim
+    satyr: satyr
+    skellag: skellag
+    vulpine: vulpine
+    warchanter: warchanter
+    windtalker: windtalker
+    word bearer: word bearer
+    battle sister: battle sister
+    brute: brute
+    chemist: chemist
+    crusher: crusher
+    dead crusader: dead crusader
+    frontline warrior: frontline warrior
+    hardscale: hardscale
+    intercessor: intercessor
+    jaeger: jaeger
+    line infantry: line infantry
+    pit fighter: pit fighter
+    pitspawn: pitspawn
+    redeemer: redeemer
+    squire: squire
+    stalwart: stalwart
+    tunnel steward: tunnel steward
+    vilespawn: vilespawn
+    admonitor: admonitor
+    cultist: cultist
+    frostskin: frostskin
+    head taker: head taker
+    heartpiercer: heartpiercer
+    incubus: incubus
+    lemure: lemure
+    oldbeard: oldbeard
+    pit cur: pit cur
+    sharpshooter: sharpshooter
+    slicer: slicer
+    stalker: stalker
+    thrasher: thrasher
+    throatcutter: throatcutter
+    tracker: tracker
+    death hound: death hound
+    sister militant: sister militant
+    yeoman: yeoman
+    bandit: bandit
+    pikeman: pikeman
+    swordsman: swordsman
+    deathknight: deathknight
+    lurker: lurker
+    novitiate: novitiate
+    axeman: axeman
+    bully: bully
+    hellhound: hellhound
+    knecht: knecht
+    magekiller: magekiller
+    preacher: preacher
+    ranger: ranger
+    thrall: thrall
+    troglodyte: troglodyte
+    warboy: warboy
+
