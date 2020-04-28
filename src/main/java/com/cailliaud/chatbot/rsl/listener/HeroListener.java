@@ -51,6 +51,18 @@ public class HeroListener extends ListenerAdapter {
         MessageEmbed msgEmbedded;
 
         switch (command) {
+            case "!raid-tier":
+                msgEmbedded = new EmbedBuilder()
+                        .setColor(Color.YELLOW)
+                        .setAuthor("RAID-CODEX", "https://raid-codex.com/tier-list/best-champions-overall/", "https://raid-codex.com/img/raid-codex.webp")
+                        .setTitle("Raid Shadow Legends : Best Champions overall", "https://raid-codex.com/tier-list/best-champions-overall/")
+                        .setDescription("Tableau listant l'ensemble des taux d'expérience et d'argent récupérables par zone de la campagne.")
+                        .setImage("https://raid-codex.com/tier-list/best-champions-overall/Arena_LoadingScreen_1920x1080-1024x576.jpg")
+                        .setDescription("Tier list des champions de Raid Shaow Legends mise à jour par la communauté Raid-Codex")
+                        .setFooter("Information récupérer par votre humble serviteur.")
+                        .build();
+                channel.sendMessage(msgEmbedded).queue();
+                break;
             case "!raid-pex":
                 msgEmbedded = new EmbedBuilder()
                         .setColor(Color.BLUE)
