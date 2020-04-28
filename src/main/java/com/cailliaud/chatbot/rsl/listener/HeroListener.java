@@ -54,21 +54,12 @@ public class HeroListener extends ListenerAdapter {
             case "!raid-tier":
                 msgEmbedded = new EmbedBuilder()
                         .setColor(Color.YELLOW)
-                        .setAuthor(AYUMILOVE, "https://ayumilove.net/raid-shadow-legends-list-of-champions-by-rarity/")
-                        .setTitle("Raid Shadow Legends : Tier list par rareté", "https://ayumilove.net/raid-shadow-legends-list-of-champions-by-rarity/")
-                        .setDescription("Tableau listant l'ensemble des taux d'expérience et d'argent récupérables par zone de la campagne.")
+                        .setTitle("Raid Shadow Legends : Tier list")
+                        .addField(AYUMILOVE, "Lien vers ayumilove tier list : https://ayumilove.net/raid-shadow-legends-list-of-champions-by-rarity/", false)
+                        .addField("RAID-CODEX", "Lien vers raid-codex tier list : https://raid-codex.com/tier-list/best-champions-overall/", false)
+                        .addField("Alucare", "Lien vers Alucare tier list : https://www.alucare.fr/wiki/guide-raid-shadow-legend/liste-des-champions-de-raid-shadow-legends-par-rarete-et-force/", false)
+                        .setDescription("Ensemble des sites fournissant des tier list.")
                         .setImage("https://raid-codex.com/tier-list/best-champions-overall/Arena_LoadingScreen_1920x1080-1024x576.jpg")
-                        .setDescription("Tier list des champions de Raid Shaow Legends mise à jour par la communauté Ayumilove")
-                        .setFooter("Information récupérer par votre humble serviteur.")
-                        .build();
-                channel.sendMessage(msgEmbedded).queue();
-                msgEmbedded = new EmbedBuilder()
-                        .setColor(Color.YELLOW)
-                        .setAuthor("RAID-CODEX", "https://raid-codex.com/tier-list/best-champions-overall/", "https://raid-codex.com/img/raid-codex.webp")
-                        .setTitle("Raid Shadow Legends : Tier list rapide", "https://raid-codex.com/tier-list/best-champions-overall/")
-                        .setDescription("Tableau listant l'ensemble des taux d'expérience et d'argent récupérables par zone de la campagne.")
-                        .setImage("https://raid-codex.com/tier-list/best-champions-overall/Arena_LoadingScreen_1920x1080-1024x576.jpg")
-                        .setDescription("Tier list des champions de Raid Shaow Legends mise à jour par la communauté Raid-Codex")
                         .setFooter("Information récupérer par votre humble serviteur.")
                         .build();
                 channel.sendMessage(msgEmbedded).queue();
