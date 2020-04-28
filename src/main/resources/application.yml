@@ -1,5 +1,9 @@
 discord:
   token: ${DISCORD_TOKEN}
+
+spring:
+  jpa:
+    open-in-view: false
 rsl:
   heroes:
     arbiter: arbitre

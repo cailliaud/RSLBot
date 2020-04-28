@@ -14,7 +14,6 @@ import javax.security.auth.login.LoginException;
 @Service
 public class DiscordService {
 
-    private JDA discordApi;
     private HeroListener heroListener;
 
     @Value("${discord.token}")
@@ -26,14 +25,14 @@ public class DiscordService {
 
     @PostConstruct
     private void postConstruct() throws LoginException {
-        this.discordApi = JDABuilder
+        JDA discordApi = JDABuilder
                 .createDefault(token)
                 .setActivity(Activity.of(Activity.ActivityType.STREAMING, "Raid: Shadow Legends"))
                 .setStatus(OnlineStatus.ONLINE)
                 .setAutoReconnect(true)
                 .build();
 
-        this.discordApi.addEventListener(heroListener);
+        discordApi.addEventListener(heroListener);
 
     }
 

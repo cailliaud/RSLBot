@@ -1,45 +1,45 @@
 package com.cailliaud.chatbot.rsl.service;
 
-import com.cailliaud.chatbot.rsl.configuration.HeroesMap;
+import com.cailliaud.chatbot.rsl.domain.HeroDto;
+import com.cailliaud.chatbot.rsl.entity.Hero;
+import com.cailliaud.chatbot.rsl.mapper.HeroMapper;
+import com.cailliaud.chatbot.rsl.repository.HeroRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
 
 @Service
 @Slf4j
 public class HeroService {
 
-    private Map<String, String> heroesMapping;
+    private HeroRepository heroRepository;
+    private HeroMapper heroMapper;
 
 
-    public HeroService(HeroesMap heroesMap) {
-        this.heroesMapping = heroesMap.getHeroes();
+    public HeroService(HeroRepository heroRepository, HeroMapper heroMapper) {
+        this.heroRepository = heroRepository;
+        this.heroMapper = heroMapper;
     }
 
-    public String findHero(String hero) {
+    public HeroDto findHero(String heroName) {
 
-        Optional<String> optionalHero = heroesMapping.entrySet().stream()
-                .filter(e -> e.getValue().equalsIgnoreCase(hero))
-                .map(e -> e.getKey())
-                .findFirst();
-        return optionalHero.isPresent() ? optionalHero.get() : null;
+        Hero hero = heroRepository.findFirstByFrenchNameIgnoreCase(heroName.toLowerCase());
+        return heroMapper.toHeroDto(hero);
+
     }
 
 
-
-    public Set<String> findSimilarHeroes(String hero) {
+    public List<HeroDto> findSimilarHeroes(String hero) {
 
         String heroToTest = hero.toLowerCase(Locale.FRANCE);
-        Set<String> tmpPossibleHeroes = new HashSet<>();
-        for (int i = hero.length(); i > 1; i--) {
+        List<Hero> tmpPossibleHeroes = new ArrayList<>();
+        for (int i = hero.length(); i > 2; i--) {
             String chunk = heroToTest.substring(0, i);
 
-            Set<String> possibleHeroes = heroesMapping.entrySet().stream()
-                    .filter(e -> e.getValue().startsWith(chunk))
-                    .map(Map.Entry::getValue)
-                    .collect(Collectors.toSet());
+            List<Hero> possibleHeroes = heroRepository.findByFrenchNameContainingIgnoreCase(chunk);
 
             if (possibleHeroes.size() > tmpPossibleHeroes.size()) {
                 tmpPossibleHeroes = possibleHeroes;
@@ -49,7 +49,7 @@ public class HeroService {
                 break;
             }
         }
-        return tmpPossibleHeroes;
+        return heroMapper.toHeroesDto(tmpPossibleHeroes);
 
     }
 }
