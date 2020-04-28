@@ -2,7 +2,6 @@ package com.cailliaud.chatbot.rsl.domain.message;
 
 import com.cailliaud.chatbot.rsl.domain.RslCommand;
 import net.dv8tion.jda.api.EmbedBuilder;
-import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
@@ -12,8 +11,6 @@ import java.util.Arrays;
 public class HelpCommand implements ICommandAnswer {
     @Override
     public void publishAnswer(MessageReceivedEvent event, Object... args) {
-        MessageChannel channel = event.getChannel();
-
         EmbedBuilder builder = new EmbedBuilder()
                 .setColor(Color.RED)
                 .setAuthor("Cailliaud", "https://github.com/cailliaud/RSLBot")
@@ -25,7 +22,12 @@ public class HelpCommand implements ICommandAnswer {
         Arrays.stream(RslCommand.values()).forEach(
                 cmd -> builder.addField(cmd.getKey(), cmd.getDescription() + "\n" + cmd.getExample(), false)
         );
+
         MessageEmbed msgEmbedded = builder.build();
-        channel.sendMessage(msgEmbedded).queue();
+        event.getAuthor().openPrivateChannel().queue((channel) ->
+        {
+            channel.sendMessage(msgEmbedded).queue();
+        });
+
     }
 }
