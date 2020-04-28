@@ -4,10 +4,7 @@ import com.cailliaud.chatbot.rsl.configuration.HeroesMap;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.Locale;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -22,8 +19,14 @@ public class HeroService {
     }
 
     public String findHero(String hero) {
-        return heroesMapping.get(hero.toLowerCase(Locale.FRANCE));
+
+        Optional<String> optionalHero = heroesMapping.entrySet().stream()
+                .filter(e -> e.getValue().equalsIgnoreCase(hero))
+                .map(e -> e.getKey())
+                .findFirst();
+        return optionalHero.isPresent() ? optionalHero.get() : null;
     }
+
 
 
     public Set<String> findSimilarHeroes(String hero) {
@@ -34,8 +37,8 @@ public class HeroService {
             String chunk = heroToTest.substring(0, i);
 
             Set<String> possibleHeroes = heroesMapping.entrySet().stream()
-                    .filter(e -> e.getKey().startsWith(chunk))
-                    .map(Map.Entry::getKey)
+                    .filter(e -> e.getValue().startsWith(chunk))
+                    .map(Map.Entry::getValue)
                     .collect(Collectors.toSet());
 
             if (possibleHeroes.size() > tmpPossibleHeroes.size()) {
