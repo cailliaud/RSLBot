@@ -11,13 +11,11 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import static com.cailliaud.chatbot.rsl.domain.Utils.*;
+
 @Service
 public class HeroMapper {
 
-    private static final String GUIDE_URL = "https://ayumilove.net/raid-shadow-legends-%s-skill-mastery-equip-guide/";
-    private static final String ICON_URL = "https://files.ayumilove.net/games/raid_shadow_legends/avatar/%s.png";
-    private static final String IMAGE_URL = "https://files.ayumilove.net/games/raid_shadow_legends/champion/%s.jpg";
-    private static final String MASTERY_URL = "https://files.ayumilove.net/games/raid_shadow_legends/mastery/%s.jpg";
 
     public HeroDto toHeroDto(Hero hero) {
 
