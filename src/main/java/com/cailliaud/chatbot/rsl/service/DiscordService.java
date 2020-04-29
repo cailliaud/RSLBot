@@ -25,6 +25,7 @@ public class DiscordService {
 
     @PostConstruct
     private void postConstruct() throws LoginException {
+
         JDA discordApi = JDABuilder
                 .createDefault(token)
                 .setActivity(Activity.of(Activity.ActivityType.STREAMING, "Raid: Shadow Legends"))

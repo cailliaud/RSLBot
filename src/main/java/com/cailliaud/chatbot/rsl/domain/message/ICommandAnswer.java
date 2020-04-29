@@ -6,5 +6,4 @@ public interface ICommandAnswer {
 
     void publishAnswer(MessageReceivedEvent event, Object... args);
 
-
 }
