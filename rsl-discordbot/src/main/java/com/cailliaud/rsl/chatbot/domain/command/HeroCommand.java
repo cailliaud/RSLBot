@@ -1,4 +1,4 @@
-package com.cailliaud.rsl.chatbot.domain.message;
+package com.cailliaud.rsl.chatbot.domain.command;
 
 import com.cailliaud.rsl.chatbot.domain.HeroDto;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -8,7 +8,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 import java.awt.*;
 
-import static com.cailliaud.rsl.utils.Utils.AYUMILOVE;
+import static com.cailliaud.rsl.chatbot.utils.Utils.AYUMILOVE;
 
 public class HeroCommand implements ICommandAnswer {
 

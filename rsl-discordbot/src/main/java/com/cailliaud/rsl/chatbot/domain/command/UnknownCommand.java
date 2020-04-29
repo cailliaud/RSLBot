@@ -1,4 +1,4 @@
-package com.cailliaud.rsl.chatbot.domain.message;
+package com.cailliaud.rsl.chatbot.domain.command;
 
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;

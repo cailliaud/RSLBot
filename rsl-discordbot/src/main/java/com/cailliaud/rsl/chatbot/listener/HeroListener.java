@@ -2,7 +2,7 @@ package com.cailliaud.rsl.chatbot.listener;
 
 import com.cailliaud.rsl.chatbot.domain.HeroDto;
 import com.cailliaud.rsl.chatbot.domain.RslCommand;
-import com.cailliaud.rsl.chatbot.domain.message.ICommandAnswer;
+import com.cailliaud.rsl.chatbot.domain.command.ICommandAnswer;
 import com.cailliaud.rsl.chatbot.service.HeroDtoService;
 import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.api.entities.Message;

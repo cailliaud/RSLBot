@@ -1,6 +1,6 @@
 package com.cailliaud.rsl.chatbot.domain;
 
-import com.cailliaud.rsl.chatbot.domain.message.*;
+import com.cailliaud.rsl.chatbot.domain.command.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

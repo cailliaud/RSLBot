@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.cailliaud.rsl.utils.Utils.*;
+import static com.cailliaud.rsl.chatbot.utils.Utils.*;
 
 @Service
 public class HeroDtoMapper {

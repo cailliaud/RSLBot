@@ -1,4 +1,4 @@
-package com.cailliaud.rsl.chatbot.domain.message;
+package com.cailliaud.rsl.chatbot.domain.command;
 
 import com.cailliaud.rsl.chatbot.domain.RslCommand;
 import net.dv8tion.jda.api.EmbedBuilder;
