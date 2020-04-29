@@ -1,1 +1,1 @@
-worker: java -jar target/raid-shadow-legend-0.0.1-SNAPSHOT.jar
+worker: java -jar rsl-discordbot/target/rsl-discordbot-0.0.1-SNAPSHOT.jar
