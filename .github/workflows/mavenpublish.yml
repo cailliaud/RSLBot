@@ -32,15 +32,3 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-    - name: Add remote origin
-      run: |
-        git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
-
-    - name: Fetch heroku
-      run: |
-        git fetch --all --unshallow
-
-    - name: Deploy to Heroku
-      run: |
-        git push heroku HEAD:master -f
