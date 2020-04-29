@@ -18,7 +18,7 @@ public class HeroService implements IHeroService {
 
     @Override
     public Hero findHero(String heroName) {
-        return null;
+        return heroAdapter.findHeroByName(heroName);
     }
 
     @Override

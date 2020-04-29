@@ -23,8 +23,8 @@ public class HeroAdapter implements IHeroAdapter {
     }
 
     @Override
-    public Hero findHeroByFrenchName(String frenchName) {
-        HeroEntity hero = heroRepository.findFirstByFrenchNameIgnoreCase(frenchName);
+    public Hero findHeroByName(String name) {
+        HeroEntity hero = heroRepository.findByName(name);
         return heroMapper.toHero(hero);
     }
 
