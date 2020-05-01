@@ -7,8 +7,7 @@ import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
 import java.awt.*;
 
-import static com.cailliaud.rsl.chatbot.utils.Utils.ALUCARE;
-import static com.cailliaud.rsl.chatbot.utils.Utils.CAILLIAUD;
+import static com.cailliaud.rsl.chatbot.utils.Utils.*;
 
 public class MineCommand implements ICommandAnswer {
 
@@ -22,14 +21,14 @@ public class MineCommand implements ICommandAnswer {
         msgEmbedded = new EmbedBuilder()
                 .setColor(Color.RED)
                 .setTitle("La mine sur Raid Shadow")
-                .setAuthor(CAILLIAUD, null, "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_197,h_192/https://www.alucare.fr/wp-content/uploads/2020/01/image-de-la-mine.jpg")
+                .setAuthor(CAILLIAUD, "https://github.com/cailliaud", "https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_197,h_192/https://www.alucare.fr/wp-content/uploads/2020/01/image-de-la-mine.jpg")
                 .addField("Level 1", String.format(GEMME_INFO, "500", "4h48", "5", "1 jour 2min"), true)
                 .addField("Level 2", String.format(GEMME_INFO, "500", "2h23", "10", "23h16"), true)
                 .addField("Level 3", String.format(GEMME_INFO, "500", "1h36", "15", "1 jour"), true)
                 .addField("Description", "La mine produit en continue des gemmes gratuitements.", true)
                 .addField(CAILLIAUD, "Est-ce rentable ?\n Oui : si vous comptez jouer longtemps au jeu ( plus de 3 mois pour rentabiliser)\nNon : si vous jouez momentanément (utilisez vos gemmes dans la boutique).", false)
                 .addField(ALUCARE, "Lien vers Alucare : https://www.alucare.fr/wiki/guide-raid-shadow-legend/la-mine-de-gemmes-sur-raid-shadow-legend/", false)
-                .addField(null, "Lien vers wiki : https://raid-shadow-legends.fandom.com/wiki/Mine", false)
+                .addField(WIKI_FANDOM, "Lien vers wiki : https://raid-shadow-legends.fandom.com/wiki/Mine", false)
                 .setImage("https://cdn.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_1365/https://www.alucare.fr/wp-content/uploads/2020/01/Mine-de-gemmes.jpg")
                 .setFooter("Information récupérer par votre humble serviteur.")
                 .build();
