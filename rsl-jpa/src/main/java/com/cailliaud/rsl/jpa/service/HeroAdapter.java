@@ -26,7 +26,7 @@ public class HeroAdapter implements IHeroAdapter {
     @Override
     public Hero findHeroByName(String name) {
         List<HeroEntity> heroes = heroRepository.findHeroesByFrenchNameOrEnglishNameIgnoringCase(name);
-        if (CollectionUtils.isEmpty(heroes)) {
+        if (!CollectionUtils.isEmpty(heroes)) {
             return heroMapper.toHero(heroes.get(0));
         } else {
             return null;
