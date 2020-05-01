@@ -15,7 +15,6 @@ public class HelpCommand implements ICommandAnswer {
                 .setColor(Color.RED)
                 .setAuthor("Cailliaud", "https://github.com/cailliaud/RSLBot")
                 .setTitle("Raid Shadow Legends Bot : Guide des commandes")
-
                 .setDescription("Ensemble des commandes utilisables pour le bot Raid Shadow Legends.")
                 .setFooter("Discord ChatBot développé par Cailliaud.");
 

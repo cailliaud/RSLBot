@@ -16,6 +16,7 @@ public enum RslCommand {
     MASTERY("!raid-maitrise", new MasteryCommand(), "Afficher les informations sur les maitrises pour un héros du jeu", "!raid-maitrise Galek"),
     TIER_LIST("!raid-tier", new TierListCommand(), "Afficher les différentes tier list du jeu.", "!raid-tier"),
     MINE("!raid-mine", new MineCommand(), "Afficher les informations sur la mine.", "!raid-mine"),
+    INFO("!raid-info", new InformationCommand(), "Afficher les principales sources d'information sur le jeu.", "!raid-info"),
     HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help"),
     UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345");
 
