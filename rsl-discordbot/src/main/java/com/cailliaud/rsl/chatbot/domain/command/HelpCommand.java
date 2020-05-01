@@ -18,7 +18,7 @@ public class HelpCommand implements ICommandAnswer {
                 .setDescription("Ensemble des commandes utilisables pour le bot Raid Shadow Legends.")
                 .setFooter("Discord ChatBot développé par Cailliaud.");
 
-        Arrays.stream(RslCommand.values()).forEach(
+        Arrays.stream(RslCommand.values()).filter(rslCommand -> !rslCommand.isHidden()).forEach(
                 cmd -> builder.addField(cmd.getKey(), cmd.getDescription() + "\n" + cmd.getExample(), false)
         );
 

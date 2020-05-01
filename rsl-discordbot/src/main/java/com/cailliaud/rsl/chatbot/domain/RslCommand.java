@@ -11,20 +11,22 @@ import java.util.Optional;
 @AllArgsConstructor
 public enum RslCommand {
 
-    EXPERIENCE("!raid-xp", new ExperienceCommand(), "Afficher les informations pour obtenir au mieux de l'expérience et de l'argent", "!raid-xp"),
-    HERO("!raid", new HeroCommand(), "Afficher les informations sur un héros du jeu", "!raid Galek"),
-    MASTERY("!raid-maitrise", new MasteryCommand(), "Afficher les informations sur les maitrises pour un héros du jeu", "!raid-maitrise Galek"),
-    TIER_LIST("!raid-tier", new TierListCommand(), "Afficher les différentes tier list du jeu.", "!raid-tier"),
-    MINE("!raid-mine", new MineCommand(), "Afficher les informations sur la mine.", "!raid-mine"),
-    INFO("!raid-info", new InformationCommand(), "Afficher les principales sources d'information sur le jeu.", "!raid-info"),
-    HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help"),
-    UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345");
+    EXPERIENCE("!raid-xp", new ExperienceCommand(), "Afficher les informations pour obtenir au mieux de l'expérience et de l'argent", "!raid-xp", false),
+    HERO("!raid", new HeroCommand(), "Afficher les informations sur un héros du jeu", "!raid Galek", false),
+    MASTERY("!raid-maitrise", new MasteryCommand(), "Afficher les informations sur les maitrises pour un héros du jeu", "!raid-maitrise Galek", false),
+    TIER_LIST("!raid-tier", new TierListCommand(), "Afficher les différentes tier list du jeu.", "!raid-tier", false),
+    MINE("!raid-mine", new MineCommand(), "Afficher les informations sur la mine.", "!raid-mine", false),
+    INFO("!raid-info", new InformationCommand(), "Afficher les principales sources d'information sur le jeu.", "!raid-info", false),
+    HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help", false),
+    UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false),
+    UNICORN("!raid-unicorn", new UnicornCommand(), null, null, true);
 
 
     private String key;
     private ICommandAnswer commandAnswer;
     private String description;
     private String example;
+    private boolean isHidden;
 
     public static RslCommand fromString(String text) {
         Optional<RslCommand> optCommand = Arrays.stream(RslCommand.values())
