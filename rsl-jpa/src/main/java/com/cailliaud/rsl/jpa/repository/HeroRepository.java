@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface HeroRepository extends CrudRepository<HeroEntity, Long> {
 
-    @Query("SELECT h FROM HERO h WHERE LOWER(h.frenchName) = LOWER(:name) OR LOWER(h.englishName) = LOWER(:name)")
+    @Query("SELECT 1 FROM HERO h WHERE LOWER(h.frenchName) = LOWER(:name) OR LOWER(h.englishName) = LOWER(:name)")
     HeroEntity findByName(String name);
 
     List<HeroEntity> findByFrenchNameContainingIgnoreCase(String frenchName);
