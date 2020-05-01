@@ -12,7 +12,7 @@ import static com.cailliaud.rsl.chatbot.utils.Utils.CAILLIAUD;
 
 public class MineCommand implements ICommandAnswer {
 
-    private static final String GEMME_INFO = "Coût : %s gemmes\nProduction : 1 gemme / %s\nCapacité: %s\nTemps complet : %";
+    private static final String GEMME_INFO = "Coût : %s gemmes\nProduction : 1 gemme / %s\nCapacité: %s\nTemps complet : %s";
 
     @Override
     public void publishAnswer(MessageReceivedEvent event, Object... args) {
