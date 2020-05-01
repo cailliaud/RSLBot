@@ -6,6 +6,7 @@ import com.cailliaud.rsl.jpa.entity.HeroEntity;
 import com.cailliaud.rsl.jpa.mapper.HeroMapper;
 import com.cailliaud.rsl.jpa.repository.HeroRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
@@ -24,8 +25,12 @@ public class HeroAdapter implements IHeroAdapter {
 
     @Override
     public Hero findHeroByName(String name) {
-        HeroEntity hero = heroRepository.findByName(name);
-        return heroMapper.toHero(hero);
+        List<HeroEntity> heroes = heroRepository.findHeroesByFrenchNameOrEnglishNameIgnoringCase(name);
+        if (CollectionUtils.isEmpty(heroes)) {
+            return heroMapper.toHero(heroes.get(0));
+        } else {
+            return null;
+        }
     }
 
     @Override

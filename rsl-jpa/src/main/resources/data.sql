@@ -22,7 +22,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('21','Azure','Azur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('22','Baerdal Fellhammer','Beardal Marteaucruel');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('23','Basher','Cogneur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('24','Battlesage','Sageguerre');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('25','Broadmaw','Largegeule');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('25','Broadmaw','Largegueule');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('26','Cardinal','Cardinale');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('27','Exemplar','Archetype');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('28','Faceless','Sans visage');
