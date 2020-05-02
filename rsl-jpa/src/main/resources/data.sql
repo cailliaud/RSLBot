@@ -71,7 +71,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('70','Pain Keeper','Garde
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('71','Painsmith','Forgedouleur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('72','Paragon','Parangon');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('73','Ragemonger','Pousserage');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('74','Reliquary Tender','Garderelique');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('74','Reliquary Tender','Garde-Reliquaire');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('75','Renegade','Renegate');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('76','Retainer','Domestique');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('77','Seducer','Seducteur');
@@ -126,7 +126,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('125','Nazana','Nazana');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('126','Oathbound','Lie par serment');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('127','Rearguard Sergeant','Arriere-garde');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('128','Reinbeast','Renne Bestial');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('129','Relickeeper','Garde reliquaire');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('129','Relickeeper','Garderelique');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('130','Ripper','Eventreur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('131','Romero','Romero');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('132','Seneschal','Senechal');
