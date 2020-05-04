@@ -11,15 +11,12 @@ import java.util.Optional;
 @AllArgsConstructor
 public enum RslCommand {
 
-    EXPERIENCE("!raid-xp", new ExperienceCommand(), "Afficher les informations pour obtenir au mieux de l'expérience et de l'argent", "!raid-xp", false),
     HERO("!raid", new HeroCommand(), "Afficher les informations sur un héros du jeu", "!raid Galek", false),
-    MASTERY("!raid-maitrise", new MasteryCommand(), "Afficher les informations sur les maitrises pour un héros du jeu", "!raid-maitrise Galek", false),
-    TIER_LIST("!raid-tier", new TierListCommand(), "Afficher les différentes tier list du jeu.", "!raid-tier", false),
-    MINE("!raid-mine", new MineCommand(), "Afficher les informations sur la mine.", "!raid-mine", false),
-    INFO("!raid-info", new InformationCommand(), "Afficher les principales sources d'information sur le jeu.", "!raid-info", false),
+    BUFF("!raid-buff", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/liste-des-buffs-et-debuffs-de-raid-shadow-legend/"), "Afficher les buffs et debuffs disponibles dans le jeu", "!raid-buff", false),
+    MASTERY("!raid-maitrise", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-raid-shadow-legend-sur-les-maitrises/"), "Afficher les maitrises du jeu", "!raid-maitrise", false),
+    ARTIFACT("!raid-artefact", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/artefact-raid-shadow-legend/"), "Afficher les artefacts du jeu", "!raid-artefact", false),
     HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help", false),
-    UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false),
-    UNICORN("!raid-unicorn", new UnicornCommand(), null, null, true);
+    UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false);
 
 
     private String key;

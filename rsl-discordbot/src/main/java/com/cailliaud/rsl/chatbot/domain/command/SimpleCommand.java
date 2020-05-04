@@ -1,18 +1,19 @@
 package com.cailliaud.rsl.chatbot.domain.command;
 
-import com.cailliaud.rsl.chatbot.domain.HeroDto;
 import net.dv8tion.jda.api.entities.MessageChannel;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 
+public class SimpleCommand implements ICommandAnswer {
 
-public class HeroCommand implements ICommandAnswer {
+    private String url;
+
+    public SimpleCommand(String url) {
+        this.url = url;
+    }
 
     @Override
     public void publishAnswer(MessageReceivedEvent event, Object... args) {
         MessageChannel channel = event.getChannel();
-        HeroDto hero = (HeroDto) args[0];
-
-        channel.sendMessage(hero.getGuideUrl()).queue();
-
+        channel.sendMessage(url).queue();
     }
 }
