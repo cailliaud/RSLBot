@@ -11,8 +11,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.cailliaud.rsl.chatbot.utils.Utils.*;
-
 @Service
 public class HeroDtoMapper {
 
@@ -23,20 +21,8 @@ public class HeroDtoMapper {
             return null;
         }
         HeroDto heroDto = new HeroDto();
-
         heroDto.setName(StringUtils.capitalize(hero.getFrenchName()));
-
-        String guideUrl = String.format(GUIDE_URL, serializeName(hero.getEnglishName(), "-"));
-        heroDto.setGuideUrl(guideUrl);
-
-        String iconUrl = String.format(ICON_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setIconUrl(iconUrl);
-
-        String imageUrl = String.format(IMAGE_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setImageUrl(imageUrl);
-
-        String masteryUrl = String.format(MASTERY_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setMasteryUrl(masteryUrl);
+        heroDto.setGuideUrl(hero.getGuideUrl());
 
         return heroDto;
     }

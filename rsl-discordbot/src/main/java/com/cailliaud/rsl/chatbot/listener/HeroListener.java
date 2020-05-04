@@ -49,7 +49,7 @@ public class HeroListener extends ListenerAdapter {
     private void performCommandWithArguments(MessageReceivedEvent event, RslCommand command, String arg) {
         MessageChannel channel = event.getChannel();
         ICommandAnswer commandAnswer = command.getCommandAnswer();
-        if (command.equals(RslCommand.MASTERY) || command.equals(RslCommand.HERO)) {
+        if (command.equals(RslCommand.HERO)) {
 
             HeroDto hero = heroService.findHero(arg);
             if (hero == null) {

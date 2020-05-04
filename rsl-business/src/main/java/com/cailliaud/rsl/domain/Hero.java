@@ -7,6 +7,7 @@ public class Hero {
 
     private String englishName;
     private String frenchName;
+    private String guideUrl;
 
 
 }
