@@ -15,6 +15,7 @@ public enum RslCommand {
     BUFF("!raid-buff", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/liste-des-buffs-et-debuffs-de-raid-shadow-legend/"), "Afficher les buffs et debuffs disponibles dans le jeu", "!raid-buff", false),
     MASTERY("!raid-maitrise", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-raid-shadow-legend-sur-les-maitrises/"), "Afficher les maitrises du jeu", "!raid-maitrise", false),
     ARTIFACT("!raid-artefact", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/artefact-raid-shadow-legend/"), "Afficher les artefacts du jeu", "!raid-artefact", false),
+    TIER_LIST("!raid-tierlist", new SimpleCommand("https://www.alucare.fr/wiki/guide-raid-shadow-legend/liste-des-champions-de-raid-shadow-legends-par-rarete-et-force/"), "Afficher la tier list du jeu", "!raid-tierlist", false),
     HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help", false),
     UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false);
 
