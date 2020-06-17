@@ -19,7 +19,8 @@ public enum RslCommand {
     INFO("!raid-info", new InformationCommand(), "Afficher les principales sources d'information sur le jeu.", "!raid-info", false),
     HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help", false),
     UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false),
-    UNICORN("!raid-unicorn", new UnicornCommand(), null, null, true);
+    UNICORN("!raid-unicorn", new UnicornCommand(), null, null, true),
+    ORI("!raid-ori", new OriCommand(), null, null, true);
 
 
     private String key;
