@@ -4,6 +4,7 @@ import com.cailliaud.rsl.adapter.IHeroAdapter;
 import com.cailliaud.rsl.domain.Hero;
 import org.springframework.stereotype.Service;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,16 +17,23 @@ public class HeroService implements IHeroService {
         this.heroAdapter = heroAdapter;
     }
 
+    public static String stripAccents(String s) {
+        s = Normalizer.normalize(s, Normalizer.Form.NFD);
+        s = s.replaceAll("[\\p{InCombiningDiacriticalMarks}]", "");
+        return s;
+    }
+
     @Override
     public Hero findHero(String heroName) {
-        return heroAdapter.findHeroByName(heroName);
+        return heroAdapter.findHeroByName(stripAccents(heroName));
     }
 
     @Override
     public List<Hero> findPossibleHeroes(String heroName) {
         List<Hero> tmpPossibleHeroes = new ArrayList<>();
-        for (int i = heroName.length(); i > 2; i--) {
-            String chunk = heroName.substring(0, i);
+        String heroNameFormatted = stripAccents(heroName);
+        for (int i = heroNameFormatted.length(); i > 2; i--) {
+            String chunk = heroNameFormatted.substring(0, i);
 
             List<Hero> possibleHeroes = heroAdapter.findHeroesByFrenchNameContains(chunk);
 
