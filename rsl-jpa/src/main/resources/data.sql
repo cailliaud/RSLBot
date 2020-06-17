@@ -76,7 +76,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('75','Renegade','Renegate
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('76','Retainer','Domestique');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('77','Seducer','Seducteur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('78','Skirmisher','Escarmoucheuse');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('79','Steadfast Marshal','Prevôt Inebranlable');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('79','Steadfast Marshal','Prevot Inebranlable');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('80','Stitched Beast','Bete suturee');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('81','Stoneskin','Peaupierre');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('82','Vanguard','Avant-garde');
@@ -212,7 +212,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('211','Crypt-King Graal',
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('212','Dracomorph','Dracomorphe');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('213','Elenaril','Elenaril');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('214','Foli','Foli');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('215','Grohak the Bloodied','Grohak l''Ensanglanté');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('215','Grohak the Bloodied','Grohak l''Ensanglante');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('216','Hakkorhn Smashlord','Hakkorhn Fracapacha');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('217','Ignatius','Ignatius');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('218','Lanakis the Chosen','Lanakis l''Elue');
@@ -328,7 +328,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('327','Windtalker','Parle
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('328','Word Bearer','Porte-Parole');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('329','Death Hound','Chien du trepas');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('330','Deathknight','Chevalier Mortel');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('331','Lurker','Rôdeur');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('331','Lurker','Rodeur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('332','Pikeman','Piquier');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('333','Swordsman','epeiste');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('334','Thrall','Vassal');
@@ -418,7 +418,7 @@ INSERT INTO hero (ID,english_Name,french_Name) VALUES ('417','Rotting Mage','mag
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('418','Siegebreaker','brisesiege');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('419','Slasher','balafreur');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('420','Soulbond Bowyer','archer chainame');
-INSERT INTO hero (ID,english_Name,french_Name) VALUES ('421','Spirithost','hôtesprit');
+INSERT INTO hero (ID,english_Name,french_Name) VALUES ('421','Spirithost','hotesprit');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('422','Templar','templier');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('423','Totem','totem');
 INSERT INTO hero (ID,english_Name,french_Name) VALUES ('424','Wanderer','vagabond');
