@@ -49,29 +49,32 @@ public class HeroListener extends ListenerAdapter {
     private void performCommandWithArguments(MessageReceivedEvent event, RslCommand command, String arg) {
         MessageChannel channel = event.getChannel();
         ICommandAnswer commandAnswer = command.getCommandAnswer();
-        if (command.equals(RslCommand.MASTERY) || command.equals(RslCommand.HERO)) {
+        switch (command){
+            case ALUCARE:
+            case AYUMILOVE:
+            case MASTERY:
+                HeroDto hero = heroService.findHero(arg);
+                if (hero == null) {
+                    List<HeroDto> possibleHeroes = heroService.findPossibleHeroes(arg);
 
-            HeroDto hero = heroService.findHero(arg);
-            if (hero == null) {
-                List<HeroDto> possibleHeroes = heroService.findPossibleHeroes(arg);
+                    String values = possibleHeroes.stream().map(HeroDto::getName).collect(Collectors.joining(", "));
 
-                String values = possibleHeroes.stream().map(HeroDto::getName).collect(Collectors.joining(", "));
+                    String answer = event.getAuthor().getAsMention() + "\n"
+                            + "> " + event.getMessage().getContentRaw() + "\n"
+                            + "Je ne connais pas le héros que tu me demandes.\n";
 
-                String answer = event.getAuthor().getAsMention() + "\n"
-                        + "> " + event.getMessage().getContentRaw() + "\n"
-                        + "Je ne connais pas le héros que tu me demandes.\n";
-
-                if (!values.isEmpty()) {
-                    answer += "Peut-être est-ce l'un de ceci : " + values;
+                    if (!values.isEmpty()) {
+                        answer += "Peut-être est-ce l'un de ceci : " + values;
+                    }
+                    channel.sendMessage(answer).queue();
+                } else {
+                    commandAnswer.publishAnswer(event, hero);
                 }
-                channel.sendMessage(answer).queue();
-            } else {
-                commandAnswer.publishAnswer(event, hero);
-            }
-        } else {
-            commandAnswer.publishAnswer(event, arg);
+                break;
+            default:
+                commandAnswer.publishAnswer(event, arg);
         }
-    }
 
+    }
 
 }

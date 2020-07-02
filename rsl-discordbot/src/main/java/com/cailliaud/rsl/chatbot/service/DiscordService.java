@@ -28,7 +28,7 @@ public class DiscordService {
 
         JDA discordApi = JDABuilder
                 .createDefault(token)
-                .setActivity(Activity.of(Activity.ActivityType.STREAMING, "Raid: Shadow Legends"))
+                .setActivity(Activity.of(Activity.ActivityType.STREAMING, "!raid-help"))
                 .setStatus(OnlineStatus.ONLINE)
                 .setAutoReconnect(true)
                 .build();

@@ -10,7 +10,7 @@ import java.awt.*;
 
 import static com.cailliaud.rsl.chatbot.utils.Utils.AYUMILOVE;
 
-public class HeroCommand implements ICommandAnswer {
+public class HeroAyumiloveCommand implements ICommandAnswer {
 
     @Override
     public void publishAnswer(MessageReceivedEvent event, Object... args) {
