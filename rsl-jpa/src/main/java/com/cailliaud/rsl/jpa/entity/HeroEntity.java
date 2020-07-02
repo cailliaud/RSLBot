@@ -19,10 +19,12 @@ public class HeroEntity {
 
     private String englishName;
     private String frenchName;
+    private String url;
 
 
-    public HeroEntity(String englishName, String frenchName) {
+    public HeroEntity(String englishName, String frenchName,String url) {
         this.englishName = englishName;
         this.frenchName = frenchName;
+        this.url= url;
     }
 }

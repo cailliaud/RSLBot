@@ -10,4 +10,5 @@ public class HeroDto {
     private String iconUrl;
     private String imageUrl;
     private String masteryUrl;
+    private String alucareUrl;
 }

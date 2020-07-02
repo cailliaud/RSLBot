@@ -20,6 +20,7 @@ public class HeroMapper {
         Hero hero = new Hero();
         hero.setEnglishName(heroEntity.getEnglishName());
         hero.setFrenchName(heroEntity.getFrenchName());
+        hero.setFrenchTutorialUrl(heroEntity.getUrl());
 
         return hero;
     }

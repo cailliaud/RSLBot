@@ -38,6 +38,8 @@ public class HeroDtoMapper {
         String masteryUrl = String.format(MASTERY_URL, serializeName(hero.getEnglishName(), "_"));
         heroDto.setMasteryUrl(masteryUrl);
 
+        heroDto.setAlucareUrl(hero.getFrenchTutorialUrl());
+
         return heroDto;
     }
 
