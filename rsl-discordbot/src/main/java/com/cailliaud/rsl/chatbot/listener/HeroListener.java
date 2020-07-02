@@ -51,7 +51,9 @@ public class HeroListener extends ListenerAdapter {
         ICommandAnswer commandAnswer = command.getCommandAnswer();
         switch (command){
             case ALUCARE:
+            case FRENCH:
             case AYUMILOVE:
+            case ENGLISH:
             case MASTERY:
                 HeroDto hero = heroService.findHero(arg);
                 if (hero == null) {

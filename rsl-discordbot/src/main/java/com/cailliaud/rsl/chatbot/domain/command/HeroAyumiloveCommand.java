@@ -26,7 +26,5 @@ public class HeroAyumiloveCommand implements ICommandAnswer {
                 .setFooter("Informations récupérées par vos humbles serviteurs Ori, Orokir, Moahh, Gafi, Tampax et Yaszawel.")
                 .build();
         channel.sendMessage(msgEmbedded).queue();
-
-        channel.sendMessage(hero.getAlucareUrl()).queue();
     }
 }
