@@ -13,6 +13,7 @@ public enum RslCommand {
 
     EXPERIENCE("!raid-xp", new ExperienceCommand(), "Afficher les informations pour obtenir au mieux de l'expérience et de l'argent", "!raid-xp", false),
     AYUMILOVE("!raid-ayumilove", new HeroAyumiloveCommand(), "[EN][AYUMILOVE] Afficher les informations sur un héros du jeu", "!raid-ayumilove Galek", false),
+    RAID("!raid", new DeprecatedCommand(), null,null ,true),
     ENGLISH("!raid-en", new HeroAyumiloveCommand(), "Identifique à !raid-ayumilove", "!raid-en Galek", false),
     ALUCARE("!raid-alucare", new HeroAlucareCommand(), "[FR][ALUCARE] Afficher les informations sur un héros du jeu", "!raid-alucare Galek", false),
     FRENCH("!raid-fr", new HeroAlucareCommand(), "Identique à !raid-alucare", "!raid-fr Galek", false),
