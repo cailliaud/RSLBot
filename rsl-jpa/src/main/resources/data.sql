@@ -48,7 +48,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('47','Bloodhorn','Co
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('48','Bloodpainter','Peintresang','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-peintresang-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('49','Bogwalker','Marchemarais','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-marchemarais-bogwalker-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('50','Bombardier','Bombardier','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-bombardier-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('51','Bone Knight','Chevalier d’Os ','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-chevalier-dos-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('51','Bone Knight','Chevalier d''Os ','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-chevalier-dos-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('52','Bonekeeper','Gardiendos','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-gardiendos-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('53','Brakus The Shifter','Brakus le Metamorphe','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-brakus-le-metamorphe-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('54','Broadmaw','Largegueule','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-largegueule-artefact-et-maitrise/');
@@ -312,7 +312,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('311','Reliquary Ten
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('312','Renegade','Renegate','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-renegate-renegade-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('313','Retainer','Domestique','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-domestique-retainer-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('314','Rhazin Scarhide','Rhazin Peaumarquee','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-rhazin-peaumarquee-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('315','Richtoff The Bold','Richtoff l’Effronte','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-richtoff-leffronte-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('315','Richtoff The Bold','Richtoff l''Effronte','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-richtoff-leffronte-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('316','Ripper','Eventreur','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-eventreur-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('317','Ritualist','Ritualiste','AIE AIE AIE, pas encore de guide !');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('318','Robar','Robar','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-robar-artefact-et-maitrise/');
@@ -370,7 +370,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('369','Sniper','Snip
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('370','Snorting Thug','Brute Bougonne','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-brute-bougonne-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('371','Sorceress','Magicienne','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-magicienne-sorceress-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('372','Soulbond Bowyer','Archer Chaînâme','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-archer-chainame-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('373','Souldrinker','Buveur d’âme','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-buveur-dame-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('373','Souldrinker','Buveur d''âme','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-buveur-dame-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('374','Souless','Sans Ame','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-sans-ame-soulless-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('375','Spider','Araignee','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-araignee-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('376','Spikehead','Tetepic','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-tetepic-artefact-et-maitrise/');
