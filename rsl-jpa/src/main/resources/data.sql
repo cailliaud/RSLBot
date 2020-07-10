@@ -374,7 +374,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('373','Souldrinker',
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('374','Souless','Sans Ame','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-sans-ame-soulless-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('375','Spider','Araignee','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-araignee-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('376','Spikehead','Tetepic','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-tetepic-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('377','Spirithost','Hôtesprit','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-hotesprit-spirithost-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('377','Spirithost','Hotesprit','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-hotesprit-spirithost-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('378','Spiritwalker','Marchesprit','AIE AIE AIE, pas encore de guide !');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('379','Squire','Ecuyer','AIE AIE AIE, pas encore de guide !');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('380','Stag Knight','Chevalier Cerf','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-chevalier-cerf-stag-knigh-artefact-et-maitrise/');
