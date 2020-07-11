@@ -7,7 +7,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('6','Aina','Aina','h
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('7','Alika','Alika','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-alika-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('8','Altan','Altan','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-altan-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('9','Alure','Charme','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-charme-alure-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('10','Amaratine Skeleton','Squelette pourpre','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-squelette-pourpre-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('10','Amarantine Skeleton','Squelette pourpre','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-squelette-pourpre-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('11','Angar','Angar','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-angar-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('12','Anointed','Oint','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-oint-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('13','Aothar','Aothar','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-aothar-artefact-et-maitrise/');
