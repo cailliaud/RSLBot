@@ -211,7 +211,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('210','Jotun','Jotun
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('211','Judge','Juge','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-juge-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('212','Judicator','Magistrat','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-magistrat-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('213','Juliana','Juliana','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-juliana-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('214','Justiciar','Justicier ','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-justicier-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('214','Justiciar','Justicier','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-justicier-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('215','Kael','Kael','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-kael-equipement-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('216','Kallia','Kallia','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-kallia-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('217','Karam','Karam','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-karam-artefact-et-maitrise/');
