@@ -369,7 +369,7 @@ INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('368','Slitherbrute'
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('369','Sniper','Sniper','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-sniper-equipement-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('370','Snorting Thug','Brute Bougonne','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-brute-bougonne-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('371','Sorceress','Magicienne','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-magicienne-sorceress-artefact-et-maitrise/');
-INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('372','Soulbond Bowyer','Archer Chaîname','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-archer-chainame-artefact-et-maitrise/');
+INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('372','Soulbond Bowyer','Archer Chainame','https://www.alucare.fr/wiki/guide-raid-shadow-legend/guide-sur-archer-chainame-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('373','Souldrinker','Buveur d''ame','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-buveur-dame-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('374','Souless','Sans Ame','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-sans-ame-soulless-artefact-et-maitrise/');
 INSERT INTO hero (ID,english_Name,french_Name, url) VALUES ('375','Spider','Araignee','https://www.alucare.fr/wiki/guide-raid-shadow-legend/champion/guide-sur-araignee-artefact-et-maitrise/');
