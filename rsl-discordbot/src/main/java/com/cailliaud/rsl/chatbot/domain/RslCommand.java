@@ -20,13 +20,13 @@ public enum RslCommand {
       "!raid-ayu",
       new HeroAyumiloveCommand(),
       "[EN][AYUMILOVE] Afficher les informations sur un héros du jeu",
-      "!raid-ayumilove Galek",
+      "!raid-ayu Galek",
       false),
   ALUCARE(
       "!raid-alu",
       new HeroAlucareCommand(),
       "[FR][ALUCARE] Afficher les informations sur un héros du jeu",
-      "!raid-alucare Galek",
+      "!raid-alu Galek",
       false),
 
   TIX(
