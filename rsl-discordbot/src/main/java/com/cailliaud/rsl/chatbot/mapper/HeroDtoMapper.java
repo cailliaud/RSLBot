@@ -16,46 +16,46 @@ import static com.cailliaud.rsl.chatbot.utils.Utils.*;
 @Service
 public class HeroDtoMapper {
 
+  public HeroDto toHeroDto(Hero hero) {
 
-    public HeroDto toHeroDto(Hero hero) {
-
-        if (hero == null) {
-            return null;
-        }
-        HeroDto heroDto = new HeroDto();
-
-        heroDto.setName(StringUtils.capitalize(hero.getFrenchName()));
-
-        String guideUrl = String.format(GUIDE_URL, serializeName(hero.getEnglishName(), "-"));
-        heroDto.setGuideUrl(guideUrl);
-
-        String iconUrl = String.format(ICON_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setIconUrl(iconUrl);
-
-        String imageUrl = String.format(IMAGE_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setImageUrl(imageUrl);
-
-        String masteryUrl = String.format(MASTERY_URL, serializeName(hero.getEnglishName(), "_"));
-        heroDto.setMasteryUrl(masteryUrl);
-
-        heroDto.setAlucareUrl(hero.getFrenchTutorialUrl());
-
-        return heroDto;
+    if (hero == null) {
+      return null;
     }
+    HeroDto heroDto = new HeroDto();
 
-    public List<HeroDto> toHeroesDto(List<Hero> heroes) {
-        if (CollectionUtils.isEmpty(heroes)) {
-            return Collections.emptyList();
-        } else {
-            return heroes.stream().map(this::toHeroDto).collect(Collectors.toList());
-        }
+    heroDto.setName(StringUtils.capitalize(hero.frenchName()));
+
+    String guideUrl = String.format(GUIDE_URL, serializeName(hero.englishName(), "-"));
+    heroDto.setGuideUrl(guideUrl);
+
+    String iconUrl = String.format(ICON_URL, serializeName(hero.englishName(), "_"));
+    heroDto.setIconUrl(iconUrl);
+
+    String imageUrl = String.format(IMAGE_URL, serializeName(hero.englishName(), "_"));
+    heroDto.setImageUrl(imageUrl);
+
+    String masteryUrl = String.format(MASTERY_URL, serializeName(hero.englishName(), "_"));
+    heroDto.setMasteryUrl(masteryUrl);
+
+    heroDto.setAlucareUrl(hero.urlAlucare());
+    heroDto.setVdgUrl(hero.urlVinceVDG());
+    heroDto.setMisterTixUrl(hero.urlMisterTix());
+
+    return heroDto;
+  }
+
+  public List<HeroDto> toHeroesDto(List<Hero> heroes) {
+    if (CollectionUtils.isEmpty(heroes)) {
+      return Collections.emptyList();
+    } else {
+      return heroes.stream().map(this::toHeroDto).collect(Collectors.toList());
     }
+  }
 
-
-    private String serializeName(String name, String separator) {
-        return Arrays.stream(name.split("\\s+"))
-                .map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
-                .map(t -> t.replace("’", ""))
-                .collect(Collectors.joining(separator));
-    }
+  private String serializeName(String name, String separator) {
+    return Arrays.stream(name.split("\\s+"))
+        .map(t -> t.substring(0, 1).toUpperCase() + t.substring(1))
+        .map(t -> t.replace("’", ""))
+        .collect(Collectors.joining(separator));
+  }
 }
