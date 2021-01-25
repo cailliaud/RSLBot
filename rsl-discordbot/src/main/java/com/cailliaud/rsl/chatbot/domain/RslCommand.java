@@ -22,20 +22,13 @@ public enum RslCommand {
       "[EN][AYUMILOVE] Afficher les informations sur un héros du jeu",
       "!raid-ayumilove Galek",
       false),
-  RAID("!raid", new DeprecatedCommand(), null, null, true),
-  ENGLISH(
-      "!raid-en",
-      new DeprecatedCommand(),
-      "Identifique à !raid-ayumilove",
-      "!raid-en Galek",
-      false),
   ALUCARE(
       "!raid-alu",
       new HeroAlucareCommand(),
       "[FR][ALUCARE] Afficher les informations sur un héros du jeu",
       "!raid-alucare Galek",
       false),
-  FRENCH("!raid-fr", new DeprecatedCommand(), "Identique à !raid-alucare", "!raid-fr Galek", false),
+
   TIX(
       "!raid-tix",
       new HeroTixCommand(),
@@ -75,7 +68,11 @@ public enum RslCommand {
   HELP("!raid-help", new HelpCommand(), "Afficher les commandes !raid", "!raid-help", false),
   UNKNOWN("", new UnknownCommand(), "Commande inconnue", "!raid-12345", false),
   UNICORN("!raid-unicorn", new UnicornCommand(), null, null, true),
-  ORI("!raid-ori", new OriCommand(), null, null, true);
+  ORI("!raid-ori", new OriCommand(), null, null, true),
+  RAID("!raid", new DeprecatedCommand(), null, null, true),
+  ENGLISH(
+      "!raid-en", new DeprecatedCommand(), "Identifique à !raid-ayumilove", "!raid-en Galek", true),
+  FRENCH("!raid-fr", new DeprecatedCommand(), "Identique à !raid-alucare", "!raid-fr Galek", true);
 
   private String key;
   private ICommandAnswer commandAnswer;
