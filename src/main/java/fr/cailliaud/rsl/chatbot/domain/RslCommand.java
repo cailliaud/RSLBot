@@ -42,11 +42,11 @@ public enum RslCommand {
       "[FR][Mister TIX] Afficher les informations sur un héros du jeu",
       "!raid-tix Galek"),
   INTELERIA(
-      "!raid-tix",
+      "!raid-int",
       new HeroCommand(
           HeroEntity::getLienInteleria, "Inteleria n'a pas encore de guide sur ce champion."),
       "[FR][Inteleria] Afficher les informations sur un héros du jeu",
-      "!raid-tix Galek"),
+      "!raid-int Galek"),
 
   TIER_LIST(
       "!raid-tier",
