@@ -1,0 +1,23 @@
+discord:
+  token: ${DISCORD_TOKEN}
+  enabled: true
+spring:
+  flyway:
+    locations: classpath:db/migration/{vendor}
+    enabled: true
+    encoding: UTF-8
+    schemas: PUBLIC
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
