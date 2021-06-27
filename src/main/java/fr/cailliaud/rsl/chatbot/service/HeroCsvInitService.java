@@ -44,7 +44,7 @@ public class HeroCsvInitService {
       heroEntity.setLienMisterTix(heroDto.getLienMisterTix());
       heroEntity.setNomAnglais(Utils.stripAccents(heroDto.getNomAnglais()).trim().toLowerCase());
       heroEntity.setNomFrancais(Utils.stripAccents(heroDto.getNomFrancais()).trim().toLowerCase());
-      log.info(heroEntity.toString());
+      log.debug(heroEntity.toString());
       heroEntitySet.add(heroEntity);
     }
 

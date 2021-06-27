@@ -4,12 +4,15 @@ import fr.cailliaud.rsl.chatbot.domain.RslCommand;
 import fr.cailliaud.rsl.chatbot.domain.command.ICommandAnswer;
 import fr.cailliaud.rsl.chatbot.entity.HeroEntity;
 import fr.cailliaud.rsl.chatbot.service.HeroService;
+import fr.cailliaud.rsl.chatbot.utils.Utils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.MessageChannel;
+import net.dv8tion.jda.api.events.interaction.SlashCommandEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
+import net.dv8tion.jda.api.interactions.commands.OptionMapping;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -39,6 +42,24 @@ public class HeroListener extends ListenerAdapter {
       } else {
         command.getCommandAnswer().publishAnswer(event);
       }
+    }
+  }
+
+  @Override
+  public void onSlashCommand(SlashCommandEvent event) {
+    if (!event.getName().startsWith("raid")) return;
+
+    List<OptionMapping> options = event.getOptionsByName("héros");
+
+    OptionMapping herosOption = options.get(0);
+
+    HeroEntity hero = heroService.findHero(herosOption.getAsString());
+    if (hero == null) {
+      event.reply("J'ai pas trouvé de héros " + herosOption.getAsString()).queue();
+    } else {
+      event
+          .reply(String.format(Utils.GUIDE_URL, Utils.serializeName(hero.getNomAnglais(), "-")))
+          .queue(); // Queue both reply and
     }
   }
 

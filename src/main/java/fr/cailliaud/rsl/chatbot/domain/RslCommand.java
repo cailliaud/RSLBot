@@ -155,7 +155,7 @@ public enum RslCommand {
       "TODO",
       "!raid-lizardmen"),
   RAID_SKINWALKERS(
-      "!!raid-skinwalkers",
+      "!raid-skinwalkers",
       new SimpleUrlCommand("https://www.inteleria.com/factions/skinwalkers/"),
       "TODO",
       "!raid-skinwalkers"),

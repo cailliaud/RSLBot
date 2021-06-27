@@ -1,10 +1,14 @@
 package fr.cailliaud.rsl.chatbot.service;
 
 import fr.cailliaud.rsl.chatbot.listener.HeroListener;
+import fr.cailliaud.rsl.chatbot.listener.PingListener;
+import lombok.RequiredArgsConstructor;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.interactions.commands.OptionType;
+import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -12,9 +16,11 @@ import javax.annotation.PostConstruct;
 import javax.security.auth.login.LoginException;
 
 @Service
+@RequiredArgsConstructor
 public class DiscordService {
 
-  private HeroListener heroListener;
+  private final HeroListener heroListener;
+  private final PingListener pingListener;
 
   @Value("${discord.token}")
   private String token;
@@ -22,12 +28,8 @@ public class DiscordService {
   @Value("${discord.enabled:false}")
   private boolean isEnabled;
 
-  public DiscordService(HeroListener heroListener) {
-    this.heroListener = heroListener;
-  }
-
   @PostConstruct
-  private void postConstruct() throws LoginException {
+  private void postConstruct() throws LoginException, InterruptedException {
 
     if (isEnabled) {
       JDA discordApi =
@@ -36,8 +38,21 @@ public class DiscordService {
               .setStatus(OnlineStatus.ONLINE)
               .setAutoReconnect(true)
               .build();
+      discordApi.addEventListener(heroListener, pingListener);
 
-      discordApi.addEventListener(heroListener);
+      discordApi.awaitReady();
+
+      discordApi
+          .getGuilds()
+          .forEach(
+              g ->
+                  g.updateCommands()
+                      .addCommands(
+                          new CommandData("ping", "Calculer le ping du bot RSL"),
+                          new CommandData("raid-ayu", "ayu raid info")
+                              .addOption(
+                                  OptionType.STRING, "héros", "nom du héros recherché", true))
+                      .queue());
     }
   }
 }
